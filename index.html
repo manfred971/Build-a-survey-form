@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdh=divice-width ,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form<h1>
+    <p id="description">Freecodecamp survey Form</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" >Name:</label>
+        <input type="text" id="name"  name="name" required placeholder="insert your name"/> 
+        <label id="email-label">Email:</label>
+        <input type="email" id="email"  name="email" required placeholder="Insert your email" /> 
+        <label id="number-label">Number:</label>
+        <input type="number" id="number"  name="number" required min="6" max="90" placeholder="Insert your age" /> 
+      </fieldset>
+      <fieldset>
+        <select id="dropdown">
+          <option>(not selected)</option>
+          <option>option1</option>
+          <option>option1</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label><input type="radio" name="radio_button1" value="btn" class="inline" />
+          radio button 1
+        </label>
+        <label><input type="radio" name="radio_button1" value="btn_1" class="inline" />
+              radio button 2
+        </label>
+      <label><input type="checkbox" name="checkbox_button_1" value="chk" class="inline" />
+          checkbox button 1
+        </label>
+        <label><input type="checkbox" name="checkbox_button_1" class="inline" value="chk_1"/>
+              checkbox button 2
+        </label>
+      </fieldset>
+      <fieldset>
+        <textarea id="textarea" name="textarea" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+      </fieldset>
+       <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+
+
+</html>
